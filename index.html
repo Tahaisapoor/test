@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -32,6 +32,14 @@
       text-decoration: none;
       color: #1f2d1c;
       font-weight: bold;
+    }
+    .lang-switcher {
+      margin-left: 20px;
+    }
+    .lang-switcher select {
+      padding: 5px;
+      font-family: 'Comfortaa', sans-serif;
+      font-size: 0.9rem;
     }
     .hero {
       padding: 60px 40px;
@@ -118,6 +126,21 @@
       <a href="#token">Token</a>
       <a href="#team">Team</a>
       <a href="#join">Join</a>
+      <span class="lang-switcher">
+        <label for="lang-select" hidden>Language</label>
+        <select id="lang-select" onchange="changeLang(this.value)">
+  <option value="en" selected>English</option>
+  <option value="fa">فارسی</option>
+  <option value="ar">العربية</option>
+  <option value="tr">Türkçe</option>
+  <option value="id">Bahasa Indonesia</option>
+  <option value="ur">اردو</option>
+  <option value="fr">Français</option>
+  <option value="sw">Kiswahili</option>
+  <option value="ru">Русский</option>
+  <option value="ms">Bahasa Melayu</option>
+</select>
+      </span>
     </nav>
   </header>
 
@@ -188,5 +211,11 @@
   <footer>
     <p>Contact us with any questions or inquiries • © 2025 HalalFi</p>
   </footer>
+
+  <script>
+    function changeLang(lang) {
+      alert('Multilingual content coming soon. You selected: ' + lang);
+    }
+  </script>
 </body>
 </html>
